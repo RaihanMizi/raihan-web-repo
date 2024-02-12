@@ -3,9 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>protfolio-website</title>
+    <!-- font awesome link st -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome link close -->
+    <!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and daisy ui link -->
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- google font link -->
+    <style>
+        .roboto-font{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'color': '#F5FCFF',
+                'colors': '#1e40af',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- tailwind custom color -->
 </head>
-<body>
-    
+<body class="roboto-font">
+    <header class="container mx-auto">
+        <!-- nav section st -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#project">Project</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li> 
+                </ul>
+              </div>
+              <a class="text-2xl font-extrabold">Md.Raihan</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a href="#Contact" class="btn">Contact Me</a>
+            </div>
+          </div>
+        <!-- nav section close -->
+        <!-- header section st -->
+        <section id="home">
+            <div class="hero min-h-screen bg-color lg:mt-9 ">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="images/header.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <H3>Hey, I am Raihan</H3>
+                    <h1 class="text-5xl font-bold py-5">I create <span class="text-colors">product design</span> <br> and brand experience</h1>
+                    <p class="py-5"> Product design and brand experience are crucial elements for any successful business. Creating a compelling product design that not only looks great but also functions well and meets the needs of your target audience is key. </p>
+                    <button class="btn btn-primary">Get In Touch</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- header section close -->
+      
+    </header>
+    <main class="container mx-auto">
+        <!-- My about me section st -->
+        <section id="about">
+            <div class="hero min-h-screen lg:mt-20 mt-11 ">
+                <div class="hero-content flex-col lg:flex-row lg:gap-7">
+                  <img src="images//raihan.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <h1 class="text-6xl font-extrabold">About Me</h1>
+                    <p class="py-6 text-xl">I am Raihan.I am an web developer and web designer.I am 19 years old.I live in Dhaka city in Bangladesh.I share to my journey as a web designer.frist time i try to hard.but i can,t design website.then i practise regularly and success to web design section.I want to UX/UI design, responsive design, front-end development, or any other aspect of web design</p>
+                    <button class="btn btn-primary py-5">Learn more</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+         <!-- My about me section close -->
+         <!-- project section st -->
+         <section id="project">
+            <h2 class="text-5xl font-extrabold text-center mb-5">My Project</h2>
+            <p class="text-center "> A responsive design ensures that your website looks and functions seamlessly across <br> all devices, providing a positive user experience.</p>
+            <div class="grid lg:grid-cols-3 mt-20 gap-20 items-center justify-center">
+                <div class="text-center w-[304px] h-[200px] bg-color items-center">
+                    <i class="fa-solid fa-medal mt-8"></i>
+                    <h2 class="text-3xl font-extrabold mt-3">Experince</h2>
+                    <p class="text-xl font-bold mt-5">1Year+Experince</p>
+                </div>
+                <div class="text-center w-[304px] h-[200px] bg-color">
+                    <i class="fa-solid fa-users mt-8"></i>
+                    <h2 class="text-3xl font-extrabold mt-3" >Cilent</h2>
+                    <p class="text-xl font-bold mt-5">80+Happy Client</p>
+                </div>
+               <div class="text-center w-[304px] h-[200px] bg-color">
+                <i class="fa-solid fa-code mt-8"></i>
+                <h2 class="text-3xl font-extrabold mt-3">Website</h2>
+                <p class="text-xl font-bold mt-5">220+Website</p>
+               </div>
+            </div>
+         </section>
+          <!-- project section close -->
+          <!-- portfolio section st -->
+          <section id="portfolio">
+            <div class="text-center lg:mt-48 mt-16">
+              <h3 class="text-4xl font-extrabold">Portfolio Design</h3>
+              <p class="mt-4 text-xl mb-20">My some portfolio website design here</p>
+            </div>
+            <div class="lg:grid lg:grid-cols-3 gap-5 ">
+              <!-- card 1 st -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img src="images/port-1.jpg" alt="" /></figure>
+              <div class="card-body">
+                <p class="mt-4">Website Design</p>
+                <h3 class="font-extrabold text-2xl mt-4">Website Development For Dark X</h3>
+              </div>
+            </div>
+            <!-- card 1 close -->
+            <!-- card 2 st -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img src="images//port-2.jpg" alt="" /></figure>
+              <div class="card-body">
+                <p class="mt-4">Website Design</p>
+                <h3 class="font-extrabold text-2xl mt-4">Website Development For Dark X</h3>
+              </div>
+            </div>
+            <!-- card 2 close -->
+            <!-- card 3 st -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img src="images//port-3.jpg" alt="" /></figure>
+              <div class="card-body">
+                <p class="mt-4">Website Design</p>
+                <h3 class="font-extrabold text-2xl mt-4">Website Development For Dark X</h3>
+              </div>
+            </div>
+            <!-- card 3 close -->
+            <!-- card 4 st -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img src="images//port-4.jpg" alt="" /></figure>
+              <div class="card-body">
+                <p class="mt-4">Website Design</p>
+                <h3 class="font-extrabold text-2xl mt-4">Website Development For Dark X</h3>
+              </div>
+            </div>
+            <!-- card 4 close -->
+            <!-- card 5 st -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img src="images//port-5.jpg" alt="" /></figure>
+              <div class="card-body">
+                <p class="mt-4">Website Design</p>
+                <h3 class="font-extrabold text-2xl mt-4">Website Development For Dark X</h3>
+              </div>
+            </div>
+            <!-- card 5 close -->
+            <!-- card 6 st -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+              <figure><img src="images//port-6.jpg" alt="" /></figure>
+              <div class="card-body">
+                <p class="mt-4">Website Design</p>
+                <h3 class="font-extrabold text-2xl mt-4">Website Development For Dark X</h3>
+              </div>
+            </div>
+            <!-- card 6 close -->
+            </div>
+          </section>
+          <!-- portfolio section close -->
+          <!-- contact section st -->
+          <section id="Contact">
+            <div class="hero min-h-screen mt-16 lg:mt-28 bg-color">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="text-center lg:text-left lg:gap-7">
+                  <h1 class="text-5xl font-bold">Contact Now</h1>
+                  <p class="py-6 font-bold">Many web developers have a contact form on their own <br> website.  You can visit their website and look for a <br> "Contact" or "Get in Touch" page,where you'll typically  find a form  to fill out with your <br> name, email address, and message.</p>
+                </div>
+                <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Name</span>
+                      </label>
+                      <input type="text" placeholder="name" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Email</span>
+                      </label>
+                      <input type="email" placeholder="email" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Password</span>
+                      </label>
+                      <input type="password" placeholder="password" class="input input-bordered" required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button class="btn btn-primary">Login</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+           <!-- contact section close -->
+    </main>
+    <footer>
+      <footer class="footer p-10 bg-base-300 text-base-content">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Wbsite design</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav class="">
+          <h6 class="footer-title">Social</h6> 
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.facebook.com/profile.php?id=100091242486287"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/md.raihan7635/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/RaihanMizi/raihan-web-repo"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </nav>
+      </footer>
+    </footer>
 </body>
 </html>
