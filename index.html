@@ -42,6 +42,14 @@
             }
           }
         }
+        // tailwind.config.js
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}
+
       </script>
     <!-- tailwind custom color -->
 </head>
@@ -60,6 +68,7 @@
                   <li><a href="#project">Project</a></li>
                   <li><a href="#portfolio">Portfolio</a></li> 
                   <li><a href="#skills">Skills</a></li> 
+                   <li><a href="#3dAnimation">3dAmimation</a></li>
                   
                    
                 </ul>
@@ -73,6 +82,7 @@
                 <li><a href="#project">Project</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#3dAnimation">3dAmimation</a></li>
                 
   
               </ul>
@@ -215,19 +225,47 @@
       <div class="overflow-hidden rounded-2xl shadow-lg">
         <img src="images/2D image.jpg" alt="Work Image 2" class="w-full h-auto object-cover">
       </div>
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/2Danimation.png" alt="Work Image 2" class="w-full h-auto object-cover">
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/2Danimation2.jpg" alt="Work Image 2" class="w-full h-auto object-cover">
+      </div>
       
     </div>
 
     <!-- YouTube Video -->
-    <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-lg">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/fA-VIIZ8Flg?si=8c1cWM9UKgvVUGci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+   
   </div>
 </section>
 
-            </section>
+</section>
          
-          <!-- skill section close -->
+<!-- skill section close -->
+<!-- 3d animation video st -->
+
+<section id="3dAnimation">
+  
+<section class="w-screen h-screen bg-gray-100 flex items-center justify-center">
+  <div class="w-full h-full aspect-video">
+     <h2 class="text-3xl md:text-4xl font-bold text-center mb-10" id="3dAnimation">3D Animation</h2>
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/fA-VIIZ8Flg?si=8c1cWM9UKgvVUGci"
+      title="3D Animation Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+</section>
+
+
+
+
+
+ <!-- 3d animation video close -->
           <!-- designer life section st -->
           <section>
             <h2 class="lg:mt-44 mt-16 text-5xl font-extrabold text-blue-600 text-center">Designer Life</h2>
